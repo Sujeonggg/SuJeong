@@ -35,6 +35,63 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script defer src="./js/youtube.js"></script>
   <script defer src="./js/main.js"></script>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  #main_menu {
+    height: 88px;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    padding: 25px 20px;
+  }
+  #main_menu li {
+    display: inline;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  #content_box {
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 1320px;
+    border: solid 1px red;
+  }
+  #content_box h3 {
+    float: left;
+    margin-left: 500px;
+  }
+  #content_box p {
+    float: right;
+  }
+  .items li img{
+    display:flex
+  }
+  .items .a {
+    font-weight: bold;
+    color:blue;
+    margin-top: 20px;
+  }
+  .items .b {
+    font-weight: bold;
+    color: black;
+    margin-top: 8px;
+  }
+  .items .b span {
+    color: #a26f59;
+  }
+  .items .c {
+    font-size: 12px;
+    line-height: 120%;
+    margin-top: 20px;
+  }
+  .items .d {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .items .d span {
+    color: #a26f59;
+  }
+</style>
 </head>
 <body>
 <!-- HEADER -->
@@ -69,7 +126,7 @@
               <li>
                 <h4>소개</h4>
                 <ul>
-                  <li><a href="./소개.html">찾아오시는 길</a></li>
+                  <li>찾아오시는 길</li>
                 </ul>
               </li>
           </div>
@@ -116,7 +173,7 @@
               <li>
                 <h4>전체 메뉴</h4>
                 <ul>
-                  <li><a href="./쇼핑몰.html">근무 용품</a></li>
+                  <li><a href="./쇼핑몰.html">근무용품</a></li>
                   <li>티걸이 / 티꽂이 / 골프티</li>
                   <li>볼마크</li>
                 </ul>
@@ -159,7 +216,7 @@
       <img src="" alt="" />
     </div>
     <div class="fade-in">
-      <img src="./images/golf.png" height ="200" alt="ball" class="ball_text" />
+      <img src="./images/golf.png" height ="200" alt="ball" class="ball text" />
     </div>
     </div> 
   </div>
@@ -200,159 +257,47 @@
     </div>
   </div>
 </section>
-
-<!--PROMOTION-->
-<section class="promotion">
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./images/A골프장.jpg" height ="450" width="800" alt="가골프장 캐디 모집" />
-        <a href="javascript:void(0)" class="btn">자세히 보기</a>
-      </div>
-      <div class="swiper-slide">
-        <img src="./images/캐디.jpg" height ="450" width="800"alt="나골프장 캐디 모집" />
-        <a href="javascript:void(0)" class="btn">자세히 보기</a>
-      </div>
-      <div class="swiper-slide">
-        <img src="./images/C골프장 모집.jpg" height ="450" width="800"alt="다골프장 캐디 모집" />
-        <a href="javascript:void(0)" class="btn">자세히 보기</a>
-      </div>
-  </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev">
-    <span class="material-icons">arrow_back</span>
-  </div>
-  <div class="swiper-button-next">
-    <span class="material-icons">arrow_forward</span>
-  </div>
-</section>
-
-<!--REWARDS-->
-<section class="rewards">
-  <div class="bg-left"></div>
-  <div class="bg-right"></div>
-  <div class="inner">
-    
-  </div>
-</section>
-
-<!--YOUTUBE VIDEO-->
-<section class="youtube">
-  <div class="youtube__area">
-    <div id="player"></div>
-  </div>
-  <div class="youtube__cover"></div>
-  <div class="inner">
-    <img src="./images/ㅠㅠ불쌍.png" alt="Icon" height="200" class="floating1" />
-  </div>
-</section>
-
-<!--SEASON PRODUCT-->
-<section class="season-product scroll-spy">
-  <div class="inner">
-    <img src="./images/캐디.png" alt="Icon" height="200" class="floating3" />
-    <img src="./images/골프백.png" width="500" height="350" alt="" class="product back-to-position to-right" />
-    <div class="text-group">
-      <img src="" alt="" class="title back-to-position to-left delay-1" />
-      <img src="" alt="" class="description back-to-position to-left delay-1" />
-      <div class="more back-to-position to-left delay-3">
-        <a href="javascript:void(0)" class="btn">자세히 보기</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--RESERVE COFFEE-->
-
-
-<!--RESERVE STORE-->
-<section class="reserve-store">
-  <div class="inner">
-    <div class="medal">
-      <div class="front">
-        <img src="./images/골프공.png" height="300" alt="" />
-      </div>
-      <div class="back">
-        <img src="./images/골프공.png" height="300" alt="" />
-        <a href="javascript:void(0)" class="btn">
-          매장안내
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--AWARDS-->
-<section class="awards">
-  <div class="inner">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/awards_slide1.jpg" alt="대통령 표창" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/awards_slide2.jpg" alt="대통령 표창(3년 연속)" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/awards_slide3.jpg" alt="우수사업주 인증" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/awards_slide5.jpg" alt="대한상의회장상" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/awards_slide6.jpg" alt="기업사회공헌 활동 부문" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/awards_slide7.jpg" alt="KSI 1위(5년 연속)" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/awards_slide8.jpg" alt="KS-SQI 1위(5년 연속)" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/awards_slide10.jpg" alt="동반성장 부문(4년 연속)" />
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-prev">
-      <span class="material-icons">arrow_back</span>
-    </div>
-    <div class="swiper-button-next">
-      <span class="material-icons">arrow_forward</span>
-    </div>
-  </div>
-</section>
-
-<!--FOOTER-->
-<footer>
-  <div class="inner">
-    <ul class="menu">
-      <li><a href="javascript:void(0)" class="orange">개인정보처리방침</a></li>
-      <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
-      <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-      <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+<br>
+<nav>
+  쇼핑몰
+</nav>
+<nav id="main_menu">
+  <div class="box">
+    <ul>
+      <li>전체 상품</li>
+      <li>근무 용품</li>
+      <li>티걸이/숏티/골프티</li>
+      <li>볼마크</li>
     </ul>
-    <div class="btn-group">
-      <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
-      <a href="javascript:void(0)" class="btn btn--white">신규입점제의</a>
-      <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
-    </div>
-    <div class="info">
-      <span>사업자등록번호 123-45-6789</span>
-      <span>(주)Caddie Korea</span>
-      <span>TEL : 031) 1234-5678 / FAX : 031) 1234-5678</span>
-      <span>개인정보 책임자 : 백수정</span>
-    </div>
-    <p class="copyright">
-      &copy; <span class="this-year"></span>
-      Caddie Korea Company. All Rights Reserved.
-    </p>
-    <img src="" alt="" class="logo" />
   </div>
-</footer>
-
-<!--TO TOP BUTTON-->
-<div id="to-top">
-  <div class="material-icons">arrow_upward</div>
-</div>
+</nav>
+  <div id="content_box">
+    <div class="box">
+    <p>추천수 | 최신등록순</p>
+    <div class="clear"></div>
+    <ul class="items">
+      <li><img src="./images/스컬 삼각수평마크.jpg"></li>
+      <li class="a">스컬 삼각수평마크</li>
+      <li class="b">20,000원<span>30%</span></li>
+      <li class="c">그린에서 사용하세요</li>
+      <li class="d">리뷰 <span>2</span> 평점 ' <span>4.5/5</span></li>
+    </ul>
+    <ul class="items">
+      <li><img src="./images/스컬 삼각수평마크.jpg"></li>
+      <li class="a">스컬 삼각수평마크</li>
+      <li class="b">20,000원<span>30%</span></li>
+      <li class="c">그린에서 사용하세요</li>
+      <li class="d">리뷰 <span>2</span> 평점 ' <span>4.5/5</span></li>
+    </ul>
+    <ul class="items">
+      <li><img src="./images/스컬 삼각수평마크.jpg"></li>
+      <li class="a">스컬 삼각수평마크</li>
+      <li class="b">20,000원<span>30%</span></li>
+      <li class="c">그린에서 사용하세요</li>
+      <li class="d">리뷰 <span>2</span> 평점 ' <span>4.5/5</span></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</section>
 </body>
 </html>
